@@ -40,5 +40,13 @@ It uses MySQL DBMS for storing data. The server was designed only for GNU/Linux 
             <li>Production server</li>
         </ul>
     </li>
-    <li>Jenkins deploys application</li>
+    <li>Jenkins deploys application
+        <ul>
+            <li>Copy from SCM</li>
+            <li>Build (using preconfigured docker image)</li>
+            <li>Deploy to staging</li>
+            <li>Wait for approve</li>
+            <li>Deploy to production</li>
+        </ul>
+    </li>
 </ol>
