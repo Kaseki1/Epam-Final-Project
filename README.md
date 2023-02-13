@@ -21,4 +21,24 @@ It uses MySQL DBMS for storing data. The server was designed only for GNU/Linux 
     <li>Jenkins</li>
     <li>Docker</li>
 </ul>
-
+## Stages of implementation
+<ol>
+    <li>Terraform creates infrastructure
+        <ul>
+            <li>Jenkins server</li>
+            <li>Staging server</li>
+            <li>Production server</li>
+            <li>VPC</li>
+            <li>Network interfaces</li>
+            <li>Elastic IPs</li>
+        </ul>
+    </li>
+    <li>Ansible configures servers
+        <ul>
+            <li>Jenkins server</li>
+            <li>Staging server</li>
+            <li>Production server</li>
+        </ul>
+    </li>
+    <li>Jenkins deploys application</li>
+</ol>
